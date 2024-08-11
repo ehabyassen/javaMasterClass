@@ -19,3 +19,4 @@ To run the project successfully
 
 6- Run the process 'imqbrokerd'. For linux -> ./imqbrokerd
 
+To make sure the service started, look for the following log message -> Broker "imqbroker@localhost:7676" ready.
