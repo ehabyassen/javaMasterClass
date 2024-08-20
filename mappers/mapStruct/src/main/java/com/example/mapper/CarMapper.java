@@ -21,4 +21,8 @@ public interface CarMapper {
     @Mapping(target = "manufacturer", source = "make")
     @Mapping(target = "seatCount", source = "numberOfSeats")
     CarDto carToCarDto(Car car);
+
+    @Mapping(target = "make", source = "manufacturer")
+    @Mapping(target = "numberOfSeats", source = "seatCount")
+    Car carDtoToCar(CarDto carDto);
 }

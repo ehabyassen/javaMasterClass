@@ -5,7 +5,7 @@ public class Car {
     private String make;
     private int numberOfSeats;
     private String color;
-    private final int speed;
+    private int speed;
 
     public Car(String make, int numberOfSeats, String color, int speed) {
         this.make = make;
@@ -36,5 +36,13 @@ public class Car {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 }

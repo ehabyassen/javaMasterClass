@@ -28,4 +28,16 @@ public class AppTest {
         assertEquals(carDto.getSeatCount(), car.getNumberOfSeats());
         assertEquals(carDto.getColor(), car.getColor());
     }
+
+    @Test
+    public void test_simple_mapping2() {
+        CarDto carDto = new CarDto("BMW", 4, "Red");
+
+        Car car = mapper.carDtoToCar(carDto);
+
+        assertEquals(car.getMake(), carDto.getManufacturer());
+        assertEquals(car.getNumberOfSeats(), carDto.getSeatCount());
+        assertEquals(car.getColor(), carDto.getColor());
+        assertEquals(car.getSpeed(), 0);
+    }
 }
